@@ -19,7 +19,7 @@ export default class CarouselFeatured extends React.Component {
 			                	<Link to={`/product/${product._id}`}>
 							    <img
 							      className="d-block w-100"
-							      src={`http://localhost:3000/${product.productImage[0]}`}
+							      src={`https://shop-mobile-full-stack.herokuapp.com/${product.productImage[0]}`}
 							      alt="Slide"
 							    />
 							    </Link>
@@ -41,7 +41,7 @@ export default class CarouselFeatured extends React.Component {
 			                	<Link to={`/product/${product._id}`}>
 							    <img
 							      className="d-block w-100 img-fluid"
-							      src={`http://localhost:3000/${product.productImage[0]}`}
+							      src={`https://shop-mobile-full-stack.herokuapp.com/${product.productImage[0]}`}
 							      alt="Slide"
 							    />
 							    </Link>

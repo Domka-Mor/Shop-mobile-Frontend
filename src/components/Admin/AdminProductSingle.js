@@ -16,7 +16,7 @@ export default class BackProductSingle extends React.Component {
         <div className= 'card'>
               <div className= 'img-container p-2'>               
                  {/*<img src={'http://localhost:3000/uploads/1605541890343pool.jpg'} alt='img'/>*/}
-                <img src={`http://localhost:3000/${productImage[0]}`} alt='img' className='img-fluid'/>
+                <img src={`https://shop-mobile-full-stack.herokuapp.com/${productImage[0]}`} alt='img' className='img-fluid'/>
               </div>
           {/* card footer */}
           <div className='card-footer'>

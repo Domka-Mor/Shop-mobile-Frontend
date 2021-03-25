@@ -68,7 +68,7 @@ class ProductProvider extends Component {
 
 
 	fetchProducts = () => {
-	    fetch('http://localhost:3000/product', {
+	    fetch('https://shop-mobile-full-stack.herokuapp.com/product', {
 	      method: 'get',
 	      headers: {'Content-Type': 'application/json'}
 	    })
@@ -153,7 +153,7 @@ class ProductProvider extends Component {
 	    let params = this.state.userId;
 	    const cart = [...this.state.cartAPI];
 	 	
-	    const url = 'http://localhost:3000/user/cart/' + params;
+	    const url = 'https://shop-mobile-full-stack.herokuapp.com/user/cart/' + params;
 	    fetch(url, {
 	      method: 'put',
 	      headers: {
@@ -182,7 +182,7 @@ class ProductProvider extends Component {
 	    const subtotal = this.state.cartSubTotal;
 	    const tax = this.state.cartTax;
 	   	const date = new Date().toISOString().slice(0, 10);   
-	    const url = 'http://localhost:3000/orders/' + params;
+	    const url = 'https://shop-mobile-full-stack.herokuapp.com/orders/' + params;
 	    fetch(url, {
 	      method: 'post',
 	      headers: {
@@ -214,7 +214,7 @@ class ProductProvider extends Component {
 
   	showAdress = () => {	
 		let params = this.state.userId;
-		let url = 'http://localhost:3000/user/' + params;
+		let url = 'https://shop-mobile-full-stack.herokuapp.com/user/' + params;
 		fetch(url, {
       	method: 'get',
       	headers: {
@@ -239,7 +239,7 @@ class ProductProvider extends Component {
 
 	deleteUser = () => {		
 		let params = this.state.userId;
-		let url = 'http://localhost:3000/user/' + params;
+		let url = 'https://shop-mobile-full-stack.herokuapp.com/user/' + params;
 		fetch(url, {
       	method: 'delete',
       	headers: {
@@ -263,7 +263,7 @@ class ProductProvider extends Component {
 
 	allOrdersAPI = () => {   
 		let params = this.state.userId;
-		let url = 'http://localhost:3000/orders/' + params;
+		let url = 'https://shop-mobile-full-stack.herokuapp.com/orders/' + params;
 		fetch(url, {
       	method: 'get',
       	headers: {
@@ -286,7 +286,7 @@ class ProductProvider extends Component {
 	} 	
 
 	adminUsers = () => {	
-		fetch('http://localhost:3000/user/admin', {
+		fetch('https://shop-mobile-full-stack.herokuapp.com/user/admin', {
       	method: 'get',
       	headers: {
       	'Content-Type': 'application/json',
@@ -318,7 +318,7 @@ class ProductProvider extends Component {
 
 	adminDeleteUser = (_id) => {   
 		let params = this.state.userToDelete;
-		let url = 'http://localhost:3000/user/admin/' + params;
+		let url = 'https://shop-mobile-full-stack.herokuapp.com/user/admin/' + params;
 		fetch(url, {
       	method: 'delete',
       	headers: {
@@ -347,7 +347,7 @@ class ProductProvider extends Component {
 	} 	
 
 	adminOrders = () => {   
-		fetch('http://localhost:3000/orders/admin', {
+		fetch('https://shop-mobile-full-stack.herokuapp.com/orders/admin', {
       	method: 'get',
       	headers: {
       	'Content-Type': 'application/json',
@@ -382,7 +382,7 @@ class ProductProvider extends Component {
 
 	adminDeleteOrder = (_id) => {   
 		let params = this.state.orderAdmin;
-		let url = 'http://localhost:3000/orders/admin/' + params;
+		let url = 'https://shop-mobile-full-stack.herokuapp.com/orders/admin/' + params;
 		fetch(url, {
       	method: 'delete',
       	headers: {

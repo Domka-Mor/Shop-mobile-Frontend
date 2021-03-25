@@ -63,7 +63,7 @@ static contextType = ProductContext;
   
   onSubmitSignUp = (event) => {
      event.preventDefault();
-    fetch('http://localhost:3000/user/signup', {
+    fetch('https://shop-mobile-full-stack.herokuapp.com/user/signup', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
@@ -92,7 +92,7 @@ static contextType = ProductContext;
 
  onSubmitLogIn = (event) => {
      event.preventDefault();
-    fetch('http://localhost:3000/user/login', {
+    fetch('https://shop-mobile-full-stack.herokuapp.com/user/login', {
         method: 'post',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({

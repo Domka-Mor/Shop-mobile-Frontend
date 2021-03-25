@@ -8,7 +8,7 @@ export default function CartItem({item,kosik}) {
 	return (
 		<div className='row my-2 text-capitalize text-center d-flex align-items-center totals'>
 			<div className='col-10 mx-auto col-lg-2 cart'>
-				<img src={`http://localhost:3000/${productImage[0]}`} style={{ widht: "5rem", height: "5rem"}} className='img-fluid' alt='product'/>
+				<img src={`https://shop-mobile-full-stack.herokuapp.com/${productImage[0]}`} style={{ widht: "5rem", height: "5rem"}} className='img-fluid' alt='product'/>
 			</div>	
 			<div className='col-10 mx-auto col-lg-2 cart'>
 				<span className='d-lg-none'>product : </span> {name}

@@ -211,7 +211,7 @@ export default class ImageChanger extends React.Component {
 						<ImgWrapper >						
 							<div className='container'>		
 						       	<img
-					   	       	 	src={`http://localhost:3000/${this.context.images1[this.state.currentImage1]}`} 
+					   	       	 	src={`https://shop-mobile-full-stack.herokuapp.com/${this.context.images1[this.state.currentImage1]}`} 
 					   	        	alt="cleaning images"
 					   	        />	
 					   	        <Link to={'/product/5fa4b7b441db29365c43fd87'} onClick={() =>this.context.setID1()}> 
@@ -227,7 +227,7 @@ export default class ImageChanger extends React.Component {
 						<ImgWrapper >						
 							<div className='container'>		
 						       	<img
-					   	       	 	src={`http://localhost:3000/${this.context.images2[this.state.currentImage2]}`} 
+					   	       	 	src={`https://shop-mobile-full-stack.herokuapp.com/${this.context.images2[this.state.currentImage2]}`} 
 					   	        	alt="cleaning images"
 					   	        />	
 					   	        <Link to={'/product/5fa4b7ffbef91d2f103a23bd'}> 

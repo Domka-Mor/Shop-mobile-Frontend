@@ -27,7 +27,7 @@ export default class AdminOrderSingle extends React.Component {
 	
 	adminChange = () => {   
 		let params = this.context.orderAdmin;
-		let url = 'http://localhost:3000/orders/admin/' + params;
+		let url = 'https://shop-mobile-full-stack.herokuapp.com/orders/admin/' + params;
 		fetch(url, {
       	method: 'put',
       	headers: {

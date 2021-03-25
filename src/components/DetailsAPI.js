@@ -43,10 +43,10 @@ export default class DetailsAPI extends React.Component {
 					                (
 									<div className='col-10 mx-auto col-md-6 my-3'>
 										{/*<img src={'http://localhost:3000/uploads/1605541890343pool.jpg'} className='img-fluid' alt='img'/>*/}
-                  						<img src={`http://localhost:3000/${productImage[index]}`} alt='img' className='img-fluid main'/>
+                  						<img src={`https://shop-mobile-full-stack.herokuapp.com/${productImage[index]}`} alt='img' className='img-fluid main'/>
 										<div className='images'>
 						                    {productImage.map((item,index)=>{
-						                      return <img key={index} src={`http://localhost:3000/${item}`} alt='img' className='thumb' 
+						                      return <img key={index} src={`https://shop-mobile-full-stack.herokuapp.com/${item}`} alt='img' className='thumb' 
 						                      onClick={() => {this.handleTab(index);}}/>
 						                    })}
 						                </div>

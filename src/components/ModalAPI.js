@@ -27,7 +27,7 @@ export default class ModalAPI extends React.Component {
 										<div id='modal' className='col-8 mx-auto col-md-6 col-lg-4 text-center text-capitalize p-5'>
 											<h4 className='pb-3 text-hover'>item added to the cart</h4>
 											{/*<img src={'http://localhost:3000/uploads/1605541890343pool.jpg'} className='img-fluid' alt='img'/>*/}
-                  							<img src={`http://localhost:3000/${productImage[0]}`} alt='img' className='img-fluid'/>
+                  							<img src={`https://shop-mobile-full-stack.herokuapp.com/${productImage[0]}`} alt='img' className='img-fluid'/>
 											<h5 className='pb-2 pt-3'>{name}</h5>
 											<h5 className='pb-2'> price : $ {price}</h5>
 											<Link to='/'>

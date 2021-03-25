@@ -69,7 +69,7 @@ export default class ModalClass extends React.Component {
 
 	changeAdress = (event) => {	
 		let params = this.context.userId;
-		let url = 'http://localhost:3000/user/' + params;
+		let url = 'https://shop-mobile-full-stack.herokuapp.com/user/' + params;
 		fetch(url, {
       	method: 'put',
       	headers: {

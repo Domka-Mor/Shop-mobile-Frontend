@@ -137,7 +137,7 @@ export default class AdminModalProduct extends React.Component {
 	adminPriceChange = () => {   
 		let params = this.context.modalProductAPI._id;
 		const price = this.state.valuePrice;
-		let url = 'http://localhost:3000/product/admin/price/' + params;
+		let url = 'https://shop-mobile-full-stack.herokuapp.com/product/admin/price/' + params;
 		fetch(url, {
       	method: 'put',
       	headers: {
@@ -164,7 +164,7 @@ export default class AdminModalProduct extends React.Component {
   	adminNameChange = () => {   
 		let params = this.context.modalProductAPI._id;
 		const name = this.state.valueName;
-		let url = 'http://localhost:3000/product/admin/name/' + params;
+		let url = 'https://shop-mobile-full-stack.herokuapp.com/product/admin/name/' + params;
 		fetch(url, {
       	method: 'put',
       	headers: {
@@ -191,7 +191,7 @@ export default class AdminModalProduct extends React.Component {
 	adminCompanyChange = () => {   
 		let params = this.context.modalProductAPI._id;
 		const company = this.state.valueCompany;
-		let url = 'http://localhost:3000/product/admin/company/' + params;
+		let url = 'https://shop-mobile-full-stack.herokuapp.com/product/admin/company/' + params;
 		fetch(url, {
       	method: 'put',
       	headers: {
@@ -218,7 +218,7 @@ export default class AdminModalProduct extends React.Component {
 	adminInfoChange = () => {   
 		let params = this.context.modalProductAPI._id;
 		const info = this.state.valueInfo;
-		let url = 'http://localhost:3000/product/admin/info/' + params;
+		let url = 'https://shop-mobile-full-stack.herokuapp.com/product/admin/info/' + params;
 		fetch(url, {
       	method: 'put',
       	headers: {
@@ -245,7 +245,7 @@ export default class AdminModalProduct extends React.Component {
 	adminFeaturedChange = () => {   
 		let params = this.context.modalProductAPI._id;
 		const featured = this.state.valueCheck;
-		let url = 'http://localhost:3000/product/admin/featured/' + params;
+		let url = 'https://shop-mobile-full-stack.herokuapp.com/product/admin/featured/' + params;
 		fetch(url, {
       	method: 'put',
       	headers: {
@@ -272,7 +272,7 @@ export default class AdminModalProduct extends React.Component {
 	adminFeaturedInfoChange = () => {   
 		let params = this.context.modalProductAPI._id;
 		const featuredInfo = this.state.valueFeaturedInfo;
-		let url = 'http://localhost:3000/product/admin/featuredInfo/' + params;
+		let url = 'https://shop-mobile-full-stack.herokuapp.com/product/admin/featuredInfo/' + params;
 		fetch(url, {
       	method: 'put',
       	headers: {
@@ -300,7 +300,7 @@ export default class AdminModalProduct extends React.Component {
 		this.state.value.forEach((item) => data.append('productImage', item));
 	    data.append("productId", this.context.modalProductAPI._id);
 	    
-	    fetch('http://localhost:3000/product/admin/img/', {
+	    fetch('https://shop-mobile-full-stack.herokuapp.com/product/admin/img/', {
 	      method: 'put',	      
 	      body:data
 	    })
@@ -320,7 +320,7 @@ export default class AdminModalProduct extends React.Component {
 
 	adminDeleteProduct = () => {   
 		let params = this.context.modalProductAPI._id;
-		let url = 'http://localhost:3000/product/admin/' + params;
+		let url = 'https://shop-mobile-full-stack.herokuapp.com/product/admin/' + params;
 		fetch(url, {
       	method: 'delete',
       	headers: {
@@ -361,7 +361,7 @@ export default class AdminModalProduct extends React.Component {
 							      </div>								    
 							    :								   
 							      <div onDoubleClick={this.changeEditImg}>
-							      	<img src={`http://localhost:3000/${this.context.modalProductAPI.productImage[0]}`} alt='img' className='img-fluid'/>
+							      	<img src={`https://shop-mobile-full-stack.herokuapp.com/${this.context.modalProductAPI.productImage[0]}`} alt='img' className='img-fluid'/>
 							      </div>								    
 								}
       							{this.state.editName ?      								

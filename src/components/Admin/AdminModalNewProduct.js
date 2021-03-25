@@ -140,7 +140,7 @@ export default class AdminModalNewProduct extends React.Component {
 	    data.append("featured", this.state.valueFeatured);
 	    data.append("featuredInfo", this.state.valueFeaturedInfo);
 	    
-	    fetch('http://localhost:3000/product/admin', {
+	    fetch('https://shop-mobile-full-stack.herokuapp.com/product/admin', {
 	      method: 'post',	      
 	      body:data
 	    })
