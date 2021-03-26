@@ -73,8 +73,8 @@ export default class Admin extends React.Component {
 					</Row>
 				</Container>
 
-				<Container fluid className='d-lg-none'>
-					<Row className='mt-3'>
+				<Container fluid className='d-lg-none mt-5'>
+					<Row className='mt-5'>
 						<Col className="d-flex justify-content-center account">
 							<button className="btn btn-primary my-4 text-capitalize" onClick={() => {this.handleClick1()}}>
 								All Users

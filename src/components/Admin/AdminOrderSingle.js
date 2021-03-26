@@ -122,16 +122,16 @@ export default class AdminOrderSingle extends React.Component {
 		            <Accordion.Collapse eventKey="1" className='accordeon accordeon-text'>
 		              <Card.Body>
 		                <div className= 'row my-2 text-capitalize text-center d-flex align-items-center text-bright'>
-		                    <div className='col-2 mx-auto col-lg-2'>
+		                    <div className='col-3 mx-auto col-lg-2'>
 		                      <p className='text-uppercase'>company</p>
 		                    </div>
-		                    <div className='col-2 mx-auto col-lg-2'>
+		                    <div className='col-3 mx-auto col-lg-2'>
 		                      <p className='text-uppercase'>name of product</p>
 		                    </div>
-		                    <div className='col-2 mx-auto col-lg-2'>
+		                    <div className='col-3 mx-auto col-lg-2'>
 		                      <p className='text-uppercase'>quantity</p>
 		                    </div>
-		                    <div className='col-2 mx-auto col-lg-2'>
+		                    <div className='col-3 mx-auto col-lg-2'>
 		                      <p className='text-uppercase'>price</p>
 		                    </div>
 		                </div>
@@ -139,16 +139,16 @@ export default class AdminOrderSingle extends React.Component {
 		                {                  
 		                  orders.map((order,i) => 
 		                    <div key={i} className='row my-2 text-capitalize text-center'>   
-		                      <div className='col-2 mx-auto col-lg-2'>                  
+		                      <div className='col-3 mx-auto col-lg-2'>                  
 		                        <p>{order.company}</p>
 		                      </div>
-		                      <div className='col-2 mx-auto col-lg-2'>
+		                      <div className='col-3 mx-auto col-lg-2'>
 		                        <p>{order.name}</p>
 		                      </div>
-		                      <div className='col-2 mx-auto col-lg-2'>
+		                      <div className='col-3 mx-auto col-lg-2'>
 		                        <p>{order.count}</p>
 		                      </div>
-		                      <div className='col-2 mx-auto col-lg-2'>
+		                      <div className='col-3 mx-auto col-lg-2'>
 		                        <p>$ {order.price}</p>
 		                      </div>
 		                    </div>

@@ -237,6 +237,8 @@ const ModalContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	z-index: 10;
+	overflow: hidden;
 		#modal{
 			background: var(--mainWhite);
 		}

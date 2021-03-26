@@ -13,7 +13,7 @@ export default function Cart ({kosik}) {
 	
 		return (
 			<>
-			<section>
+			<section className='pt-4'>
 				<ProductConsumer1>
 
 					{kosik => {

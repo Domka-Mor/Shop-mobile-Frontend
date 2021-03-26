@@ -242,7 +242,7 @@ const Wawe = styled.div`
 		box-sizing: border-box;
 		background: linear-gradient(180deg, #008aff, #ff137d), url(${cover4});
 		background-blend-mode: screen;
-		@media (max-width: 950px){
+		@media (max-width: 1500px){
 			display: none;
 		}
 	}
@@ -335,27 +335,29 @@ const ImgBackground3 = styled.div`
 		color: #EE7F60;
 		text-shadow: 2px 2px black;
 		z-index: 10;
-		@media (max-width: 1500px){
-			display: none;
+		@media (max-width: 2100px){
+			color: transparent;
+			text-shadow: none;
 		}
 	}
 
 	.container1 .text-left{
 		position: relative;
-		top: 19%;
+		top: 22%;
 		left: 8%;
 		font-weight: 800;
 		color: #EE7F60;
 		text-shadow: 2px 2px black;
 		z-index: 10;
-		@media (max-width: 1500px){
-			display: none;
+		@media (max-width: 2100px){
+			color: transparent;
+			text-shadow: none;
 		}
 	}
 
 	.container1 .btn {
 	  position: absolute;
-	  bottom: 15%;
+	  bottom: 5%;
 	  left: 50%;
 	  transform: translate(-50%, -50%);
 	  -ms-transform: translate(-50%, -50%);
@@ -377,7 +379,7 @@ const ImgBackground3 = styled.div`
 	.container1 .phone{
 		position: relative;
 		display: flex;
-		top: 34%;
+		top: 50%;
 		left: 50%;
 		width: 550px;
 		height: auto;
@@ -536,6 +538,12 @@ const Card2 = styled.div`
 		@media (max-width: 740px){
 	    	padding-top: 0;
 	  	}
+	}
+
+	@media (max-width: 550px){
+	   	.padding{
+	   		display: none;
+	   	}
 	}
 
 	.top{
@@ -699,7 +707,7 @@ const ImgLayer2 = styled.div`
 		justify-content: center;
 		align-items: center;
 		min-height: 100%;
-		@media (max-width: 950px){
+		@media (max-width: 1500px){
 			display: none;
 		}
 	}
@@ -796,7 +804,7 @@ const ImgHover = styled.div`
 		width: 100%;
 		padding-right: 50%;
 		background: white;
-		@media (max-width: 950px){
+		@media (max-width: 1500px){
 			display: none;
 		}
 	}

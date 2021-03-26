@@ -74,16 +74,10 @@ border-radius: 6px;
   padding-bottom: 3rem;
 }
 
-@media (max-width: 950px){
+@media (max-width: 1500px){
   .banner-wawe{
-    padding-top: 0rem;
+    padding-top: 3rem;
     padding-bottom: 0rem;
-  }
-  }
-
-@media (max-width: 1200px){
-  .banner-wawe{
-    padding-top: 5rem;
   }
 }
 
@@ -261,6 +255,11 @@ border-radius: 6px;
   width: auto;
   background: var(--mainDark);
 }
+ul{
+  position: relative;
+  top: 0;
+  right: 1rem;
+}
 .nav-btn {
   background: transparent;
   border: none;
@@ -329,6 +328,7 @@ border-radius: 6px;
 }
 .logo {
   margin-right: 1rem;
+  margin-left: 1rem;
 }
 .logo a{
   text-decoration: none;

@@ -12,7 +12,7 @@ export default function Title({name,title}) {
 			</div>
 		</div>
 
-		<div className='row py-2 d-lg-none'>
+		<div className='row py-3 d-lg-none'>
 			<div className='col-10 mx-auto text-center text-title'>	
 				<h1 className='text-capitalize font-weight-bold'>
 					{name} 
