@@ -32,7 +32,7 @@ class ProductProvider extends Component {
     	userToDelete: null,
     	orderAdmin: null,
     	statusToChange: null,   	
-    	company: 'all',
+    	company: 'All',
     	inCart: false,
     	featured: false,
  	};
